@@ -1,0 +1,81 @@
+.root {
+    -fx-background-color: white;
+}
+
+.page-outer-vbox {
+  -fx-background-color: #f5f5f5;
+  -fx-alignment: center;
+}
+
+.page-inner-vbox {
+  -fx-padding: 20 0 20 0;
+  -fx-max-width: 800;
+  -fx-background-color: white;
+  -fx-alignment: center;
+  -fx-spacing: 20;
+}
+
+.header {
+  -fx-alignment: center;
+  -fx-spacing: 50;
+  -fx-padding: 10;
+  -fx-background-color: #cceeff;
+}
+
+.header-link {
+  -fx-font-size: 24;
+}
+
+.header-link-selected {
+  -fx-underline: true;
+}
+
+.info-container {
+  -fx-padding: 0 60 0 60;
+}
+
+.flow-pane {
+  -fx-alignment: center;
+  -fx-max-width: 700;
+  -fx-hgap: 20;
+  -fx-vgap: 20;
+}
+
+.big-cell {
+  -fx-background-color: green;
+  -fx-pref-width: 300;
+  -fx-min-height: 240;
+  -fx-font-size: 32;
+}
+
+.big-cell-1 {
+  -fx-background-color: orange;
+}
+
+.big-cell-2 {
+  -fx-background-color: lightgreen;
+}
+
+.big-cell-3 {
+  -fx-background-image: url('/com/jpro/hellojpro/img/preview-jpro.png');
+  -fx-background-position: center center;
+  -fx-background-size: cover;
+}
+
+.big-cell-4 {
+  -fx-background-image: url('/com/jpro/hellojpro/img/preview-ensemble.png');
+  -fx-background-position: center center;
+  -fx-background-size: cover;
+}
+
+.big-cell-5 {
+  -fx-background-image: url('/com/jpro/hellojpro/img/preview-central.png');
+  -fx-background-position: center center;
+  -fx-background-size: cover;
+}
+
+.big-cell-6 {
+  -fx-background-image: url('/com/jpro/hellojpro/img/preview-openjfx.png');
+  -fx-background-position: center center;
+  -fx-background-size: cover;
+}
