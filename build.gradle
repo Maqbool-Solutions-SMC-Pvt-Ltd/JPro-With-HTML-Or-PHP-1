@@ -14,7 +14,7 @@ buildscript {
   }
 
   dependencies {
-    classpath 'com.sandec.jpro:jpro-plugin-gradle:2022.1.8'
+    classpath 'com.sandec.jpro:jpro-plugin-gradle:2022.1.8' // 2022.1.8
     classpath 'org.openjfx:javafx-plugin:0.0.13'
   }
 }
@@ -36,7 +36,7 @@ repositories {
 }
 
 dependencies {
-  implementation "com.sandec.jpro:jpro-routing-core:0.11.0"
+  implementation "com.sandec.jpro:jpro-routing-core:0.11.0" // 0.13.0
   implementation "com.sandec:mdfx:0.2.8"
   implementation "fr.brouillard.oss:cssfx:11.5.1"
   implementation "commons-io:commons-io:2.11.0"
@@ -71,7 +71,7 @@ jpro {
   JVMArgs << '-Xmx1000m'
 
   //jpro server port
-  port = 8080
+  port = 8070
 
   openingPath = ""
 }

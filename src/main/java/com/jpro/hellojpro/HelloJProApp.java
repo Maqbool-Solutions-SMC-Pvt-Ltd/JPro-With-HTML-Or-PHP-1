@@ -17,15 +17,15 @@ public class HelloJProApp extends WebApp {
         addRoute((s) -> { switch(s) {
             case "":
             case "/":
-                return new Redirect("/landing");
-            case "/landing":
+            //     return new Redirect("/landing");
+            // case "/landing":
                 return new LandingPage(WebAPI.isBrowser() ? WebAPI.getWebAPI(stage) : null);
             case "/info":
                 return new InfoPage(WebAPI.isBrowser() ? WebAPI.getWebAPI(stage) : null);
             case "/fxml":
                 return new FXMLPage(WebAPI.isBrowser() ? WebAPI.getWebAPI(stage) : null);
             default:
-                return null;
+                return new LandingPage(WebAPI.isBrowser() ? WebAPI.getWebAPI(stage) : null);
         }});
     }
 }
