@@ -83,6 +83,7 @@ class InfoPage extends View {
 //            WebAPI.getWebAPI(pStage).openURL("+923020506910");
         });
 
+
         Label lblText1 = new Label("abid.maqbool55@gmail.com");
         LinkUtil.setLink(lblText1, "mailto:abid.maqbool55@gmail.com");
 
