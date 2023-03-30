@@ -1,7 +1,7 @@
 package com.jpro.hellojpro.page;
 
 import com.jpro.hellojpro.component.Header;
-import com.jpro.routing.View;
+import one.jpro.routing.View;
 import com.jpro.webapi.WebAPI;
 import javafx.scene.Node;
 import javafx.scene.layout.VBox;
@@ -37,6 +37,7 @@ public abstract class DefaultPage extends View {
         root.getStyleClass().add("page-outer-vbox");
         root.getChildren().add(new Header(url()));
         root.getChildren().add(innerVBox);
+        innerVBox.getParent().getStylesheets().add(getClass().getResource("/com/jpro/hellojpro/css/HelloJPro.css").toString());
         return root;
     }
 

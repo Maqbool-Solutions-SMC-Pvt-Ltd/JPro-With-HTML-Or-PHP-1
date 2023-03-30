@@ -2,3 +2,5 @@ build
 .gradle
 logs
 RUNNING_PID
+.idea
+.vscode

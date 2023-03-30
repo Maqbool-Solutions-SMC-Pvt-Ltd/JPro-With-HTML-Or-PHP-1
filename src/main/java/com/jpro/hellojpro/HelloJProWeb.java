@@ -1,32 +1,39 @@
 package com.jpro.hellojpro;
 
-import com.jpro.routing.sessionmanager.SessionManager;
-import com.jpro.webapi.JProApplication;
-import com.jpro.webapi.WebAPI;
-import javafx.application.Application;
-import javafx.geometry.Pos;
-import javafx.scene.Scene;
-import javafx.scene.control.Label;
-import javafx.scene.text.Font;
-import javafx.stage.Stage;
+import one.jpro.routing.Route;
+import one.jpro.routing.RouteApp;
 import fr.brouillard.oss.cssfx.CSSFX;
+import javafx.stage.Stage;
 
-public class HelloJProWeb extends Application {
+public class HelloJProWeb extends RouteApp {
+    private Stage pStage;
 
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         launch(args);
     }
 
     @Override
-    public void start(Stage stage)
-    {
+    public void start(Stage stage) {
+        this.pStage = pStage;
+        super.start(pStage);
+
         CSSFX.start();
 
-        HelloJProApp app = new HelloJProApp(stage);
-        Scene scene = new Scene(app);
-        stage.setScene(scene);
-        stage.show();
-        app.start(SessionManager.getDefault(app,stage));
+//        HelloJProApp app = new HelloJProApp();
+//        Scene scene = new Scene(app.get);
+//        stage.setScene(scene);
+//        stage.show();
+//        app.start((Stage) SessionManager.getDefault(app.getRouteNode(), stage));
+
+//        new RouteNode(stage, app.getRoute());
+
     }
+
+    @Override
+    public Route createRoute() {
+        HelloJProApp app = new HelloJProApp();
+
+        return new HelloJProApp().getRoute(pStage);
+    }
+
 }

@@ -1,6 +1,6 @@
 package com.jpro.hellojpro.component;
 
-import com.jpro.routing.LinkUtil;
+import one.jpro.routing.LinkUtil;
 import javafx.scene.control.Label;
 import javafx.scene.layout.HBox;
 
