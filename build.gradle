@@ -14,7 +14,7 @@ buildscript {
   }
 
   dependencies {
-    classpath 'one.jpro:jpro-gradle-plugin:2023.1.0'
+    classpath 'one.jpro:jpro-gradle-plugin:2023.1.1-DISABLE-VKEYBOARD'
     classpath 'org.openjfx:javafx-plugin:0.0.13'
   }
 }
@@ -36,7 +36,8 @@ repositories {
 }
 
 dependencies {
-  implementation "one.jpro:jpro-routing-core:0.14.0"
+  implementation "one.jpro:jpro-routing-core:0.15.0-SNAPSHOT"
+  implementation "one.jpro:jpro-routing-dev:0.15.0-SNAPSHOT"
   implementation "com.sandec:mdfx:0.2.8"
   implementation "fr.brouillard.oss:cssfx:11.5.1"
   implementation "commons-io:commons-io:2.11.0"
@@ -59,7 +60,8 @@ apply plugin: 'jpro-gradle-plugin'
  * App Main Class
  */
 //mainClassName = 'com.jpro.hellojpro.HelloJPro'
-mainClassName = 'com.jpro.hellojpro.App'
+//mainClassName = 'com.jpro.hellojpro.TestApp'
+mainClassName = 'com.jpro.hellojpro.ResponsiveApp'
 
 /**
  * jpro settings
