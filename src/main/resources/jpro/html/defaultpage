@@ -2,12 +2,11 @@
 <html lang="en">
 
 <head>
-    <title>JPro Testing</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>JPro Responsive Testing</title>
+    <meta name="description" content="An application for testing of Responsive in jPro">
     <meta charset="UTF-8">
-    <meta name="jpro Application: Hellodescription" content="description" />
 
-    <meta name="description" content="temp">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" type="text/css" href="/jpro/css/jpro.css">
     <script src="/jpro/js/jpro.js" type="text/javascript"></script>
@@ -15,20 +14,15 @@
     <style>
         body {
             overflow-x: hidden;
-            /* Hide horizontal scrollbar */
-        }
-
-        div[class="jpro-application"] {
-            height: 100vh !important;
         }
     </style>
 </head>
 
-<div>
-    <jpro-app href="/app/default" fxContextMenu="false" fullscreen="false" nativeScrolling="true" snapshot="auto"
-        userSelect="true" fxheight="false" fxwidth="false"></jpro-app>
-</div>
-
+<body>
+    <div>
+        <jpro-app href="/app/default" fxContextMenu="false" fullscreen="true" loader="none" nativeScrolling="true"
+            snapshot="auto" userSelect="true" fxHeight="false" fxWidth="false"/>
+    </div>
 </body>
 
 </html>
